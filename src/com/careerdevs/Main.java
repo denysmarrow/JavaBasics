@@ -5,9 +5,16 @@ public class Main {
     public static void main(String[] args) {
         var firstName = "Denys";
         var lastName = "Marrow";
-        var fullName = firstName + " " + lastName;
-        System.out.println(fullName);
+        createFullName(firstName, lastName);
+
 
 
     }
+    public static void createFullName (String firstName, String lastName) {
+
+        System.out.println(firstName + " " + lastName);
+    }
+
+
 }
+
