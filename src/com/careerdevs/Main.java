@@ -3,17 +3,26 @@ package com.careerdevs;
 public class Main {
 
     public static void main(String[] args) {
-        var firstName = "Denys";
-        var lastName = "Marrow";
-        createFullName(firstName, lastName);
+        String firstName = "Denys";
+        String lastName = "Marrow";
 
+//        String createdName = createFullName(firstName, lastName);
+//        System.out.println(createdName);
+        String generatedName = NameGenerator.generateFullName("first", "last");
+
+        Person myPerson = new Person(firstName, lastName);
+        System.out.println("Firstname: " + myPerson.firstName);
+        System.out.println("Lastname: " + myPerson.lastName);
+        System.out.println(myPerson.getFullName());
 
 
     }
-    public static void createFullName (String firstName, String lastName) {
+    public static String createFullName (String fName, String lName) {
+            return fName + " " + lName;
 
-        System.out.println(firstName + " " + lastName);
     }
+
+
 
 
 }
