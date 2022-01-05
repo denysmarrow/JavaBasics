@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Person[] allPeople = new Person[People.firstNames.length];
 
         for (int i = 0; i < People.firstNames.length; i++){
 
@@ -12,8 +13,13 @@ public class Main {
             String lName = People.lastNames[i];
 
             Person tempPerson = new Person(fName, lName);
-            tempPerson.sayHello();
+            //add the new Person to the array of Persons
+            allPeople[i] = tempPerson;
+
+
+
         }
+
 
 
 
