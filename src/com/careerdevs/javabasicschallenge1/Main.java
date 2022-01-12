@@ -7,6 +7,8 @@ public class Main {
 
         System.out.println(CarCollector.make);
         System.out.println(CarCollector.model);
+        System.out.println(CarCollector.mileage);
+        System.out.println(CarCollector.gasTank);
 
     }
 }
