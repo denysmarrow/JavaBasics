@@ -1,5 +1,7 @@
 package com.careerdevs.carchallenge;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,6 +14,28 @@ public class Main {
         System.out.println(carOne.make + " "  + carOne.model);
         System.out.println(carTwo.make + " "  + carTwo.model);
         System.out.println(carThree.make + " "  + carThree.model);
+
+        //Bonus Solution : Array
+
+//        Car[] myCarArr = new Car[3];
+//        myCarArr[0]= carOne;
+//        myCarArr[1]= carTwo;
+//        myCarArr[2]= carThree;
+
+        Car[] carArr = new Car[] {carOne, carTwo, carThree};
+
+        ArrayList<Car> carArrayList = new ArrayList<>();
+        carArrayList.add(carOne);
+        carArrayList.add(carTwo);
+        carArrayList.add(carThree);
+
+        for (int i = 0; i < carArr.length; i++) {
+            Car tempCar =
+        }
+
+        for (int i = 0; i < carArrayList.size(); i++) {
+
+        }
 
 
     }
