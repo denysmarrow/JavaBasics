@@ -30,10 +30,13 @@ public class Main {
         carArrayList.add(carThree);
 
         for (int i = 0; i < carArr.length; i++) {
-            Car tempCar =
+            Car tempCar = carArr[i];
+            System.out.println(tempCar.make + " " + tempCar.model);
         }
 
         for (int i = 0; i < carArrayList.size(); i++) {
+            Car tempCar = carArrayList.get(i);
+            System.out.println(tempCar.make + " " + tempCar.model);
 
         }
 
