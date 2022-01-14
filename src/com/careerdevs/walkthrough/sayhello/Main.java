@@ -7,8 +7,9 @@ public class Main {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        whatIsYourName();
-        whatIsYourFullName();
+//        whatIsYourName();
+//        whatIsYourFullName();
+        userSignUp();
 
 
     }
@@ -33,5 +34,22 @@ public class Main {
 
         System.out.println("It is so nice to formally meet you " + firstName + " " + lastName );
     }
+
+    public static void userSignUp () {
+        String userName = getUserInput("Enter a username");
+        String passWord = getUserInput("Enter a password");
+
+        System.out.println("Thanks for signing up " + userName);
+
+        if(passWord.length() < 5) {
+            System.out.println("Your password is not very good!");
+        }
     }
+
+    public static String getUserInput (String question) {
+        System.out.println(question + "\nInput: ");
+        return scanner.nextLine();
+    }
+
+}
 
