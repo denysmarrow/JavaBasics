@@ -9,7 +9,12 @@ public class Main {
     public static void main(String[] args) {
 //        whatIsYourName();
 //        whatIsYourFullName();
-        userSignUp();
+//        userSignUp();
+
+        int num = getUserIntInput("enter a number");
+        String str = getUserStringInput("enter a string");
+        System.out.println(num);
+        System.out.println(str);
 
 
     }
@@ -35,20 +40,40 @@ public class Main {
         System.out.println("It is so nice to formally meet you " + firstName + " " + lastName );
     }
 
-    public static void userSignUp () {
-        String userName = getUserInput("Enter a username");
-        String passWord = getUserInput("Enter a password");
+//    public static void userSignUp () {
+//        String userName = getUserInput("Enter a username");
+//        String passWord = getUserInput("Enter a password");
+//
+//        System.out.println("Thanks for signing up " + userName);
+//
+//        if(passWord.length() < 5) {
+//            System.out.println("Your password is not very good!");
+//        }
+//    }
 
-        System.out.println("Thanks for signing up " + userName);
+    public static void simpleCalculator () {
 
-        if(passWord.length() < 5) {
-            System.out.println("Your password is not very good!");
-        }
     }
 
-    public static String getUserInput (String question) {
+    public static int getUserIntInput (String question) {
+        System.out.println(question + "\nInt");
+        int input = scanner.nextInt();
+
+        //This line of code will clear the input line, otherwise the next time input is
+        //taken it will just read the left over new-line character
+        scanner.nextLine();
+
+        return input;
+    }
+
+    public static String getUserStringInput (String question) {
         System.out.println(question + "\nInput: ");
-        return scanner.nextLine();
+        String input = scanner.nextLine();
+        return input;
+    }
+
+    public static int sum (int num1, int num2) {
+        return num1 + num2;
     }
 
 }
