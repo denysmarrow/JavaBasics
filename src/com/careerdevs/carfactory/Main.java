@@ -1,5 +1,6 @@
 package com.careerdevs.carfactory;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -14,6 +15,17 @@ public class Main {
 
         public static String createACar(){
 
-        String ownerOfCar = getUserInput("");
+            System.out.println("Who is the owner of this car\n Owner Name: ");
+            String owner = scanner.nextLine();
+            System.out.println("Hi " + owner + "!");
+            System.out.println("What is the make of this car?\n Car Make: ");
+            String make = scanner.nextLine();
+            System.out.println("What is the model of this car?\n Car Model: ");
+            String model = scanner.nextLine();
+            System.out.println(owner + " " + "owns the car" + " " + make + " " + model);
+
+
+
+            return owner;
     }
 }
