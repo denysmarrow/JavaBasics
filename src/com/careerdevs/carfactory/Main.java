@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
             createACar();
+            createACarObject();
 
 
 
@@ -27,5 +28,10 @@ public class Main {
 
 
             return owner;
+    }
+
+    public static String createACarObject(){
+
+        return
     }
 }
