@@ -4,7 +4,7 @@ public class CreateACarObject {
     public String make;
     public String model;
     public int mileage;
-    public float gasTankPercentage;
+    public int gasTankPercentage;
 
     public CreateACarObject (String make, String model, int mileage, int gasTankPercentage) {
         this.make = make;

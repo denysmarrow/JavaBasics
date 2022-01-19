@@ -9,19 +9,10 @@ public class Main {
     public static void main(String[] args) {
 //            createACar();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What is the car's model: ");
-        String userInput = scanner.nextLine();
-        System.out.println("What is the make of this car?\n Car Make: ");
-        String make = scanner.nextLine();
-
-        int userInputNumbers = scanner.nextInt();
-
-        CreateACarObject car1 = new CreateACarObject(userInput, userInput, userInputNumbers, userInputNumbers);
-        car1.showCarFacts();
 
 
-//            createACarObject();
+
+           createACarObject();
 
 
 
@@ -45,21 +36,27 @@ public class Main {
             return owner;
     }
 
-//        public static String createACarObject() {
-//            System.out.println("What is the make of this car?\n Car Make: ");
-//            String make = scanner.nextLine();
-//            System.out.println("What is the model of this car?\n Car Model: ");
-//            String model = scanner.nextLine();
-//            System.out.println("What is the mileage of this car?\n Mileage: ");
-//            int mileage = scanner.nextInt();
-//            System.out.println("What is the gas tank percentage?\n Gas Tank Percentage: ");
-//            double gasTankPercentage = scanner.nextInt();
-//            System.out.println("This car is a " + make + ", " + model + ".\n" +
-//                    "It has " + mileage + " " + "miles, and " + gasTankPercentage + "gas.");
-//
-//            return make;
-//
-//        }
+        public static void createACarObject () {
+            Scanner scan = new Scanner (System.in);
+
+            System.out.println("Car\nModel: ");
+            String make = scan.nextLine();
+
+            System.out.println("Car\nMake: ");
+            String model = scan.nextLine();
+
+            System.out.println("Car\nMileage: ");
+            int mileage = scanner.nextInt();
+
+            System.out.println("Car\nGas Tank Percentage: ");
+
+            int gasTankPercentage = scanner.nextInt();
+
+            CreateACarObject carObject1 = new CreateACarObject(model, make, mileage, gasTankPercentage);
+
+            System.out.println(carObject1);
+
+        }
 
 
 
