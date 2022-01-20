@@ -17,6 +17,6 @@ public class CreateACarObject {
 
 
     public void showCarFacts () {
-         System.out.println("This " + make + " " + model + "has " + mileage + "miles, and the gas is at %" + gasTankPercentage);
+         System.out.println("This " + make + " " + model + " has " + mileage + " miles, and the gas is at %" + gasTankPercentage);
      }
 }

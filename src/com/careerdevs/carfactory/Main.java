@@ -7,12 +7,29 @@ public class Main {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-//            createACar();
+            createACar();
 
 
 
 
-           createACarObject();
+        Scanner scan = new Scanner (System.in);
+
+        System.out.println("Car\nModel: ");
+        String userInput = scan.nextLine();
+
+        System.out.println("Car\nMake: ");
+        String userInput2 = scan.nextLine();
+
+        System.out.println("Car\nMileage: ");
+        int userInput3 = scan.nextInt();
+
+        System.out.println("Car\nGas Tank Percentage: ");
+
+        int userInput4 = scan.nextInt();
+
+
+        CreateACarObject carObject1 = new CreateACarObject(userInput, userInput2, userInput3, userInput4);
+        carObject1.showCarFacts();
 
 
 
@@ -35,34 +52,6 @@ public class Main {
 
             return owner;
     }
-
-        public static void createACarObject () {
-            Scanner scan = new Scanner (System.in);
-
-            System.out.println("Car\nModel: ");
-            String make = scan.nextLine();
-
-            System.out.println("Car\nMake: ");
-            String model = scan.nextLine();
-
-            System.out.println("Car\nMileage: ");
-            int mileage = scanner.nextInt();
-
-            System.out.println("Car\nGas Tank Percentage: ");
-
-            int gasTankPercentage = scanner.nextInt();
-
-            CreateACarObject carObject1 = new CreateACarObject(model, make, mileage, gasTankPercentage);
-
-            System.out.println(carObject1);
-
-        }
-
-
-
-
-
-
 
 
 }
