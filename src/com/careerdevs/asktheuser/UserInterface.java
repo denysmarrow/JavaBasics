@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class UserInterface {
     public static void main(String[] args) {
-        helloAgain();
+//        helloAgain();
+        multiplier();
     }
 
     public static void helloAgain () {
@@ -39,6 +40,19 @@ public class UserInterface {
         System.out.println("Likes the color blue: " + colorPicker);
 
 
+    }
+
+    public static double multiplier(){
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Pick a number from 1 - 50?: ");
+        double firstNumber = scan.nextDouble();
+        System.out.println("Pick another number from 1 - 50?: ");
+        double secondNumber = scan.nextDouble();
+        double answer = (firstNumber * secondNumber);
+
+        return(answer);
     }
 
 }
