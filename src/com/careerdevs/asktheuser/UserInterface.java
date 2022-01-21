@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class UserInterface {
     public static void main(String[] args) {
-//        helloAgain();
+        helloAgain();
         multiplier();
     }
 
@@ -23,8 +23,8 @@ public class UserInterface {
         float favRadioStation = scan.nextFloat();
         System.out.println("What year did you graduate?: ");
         short gradYear = scan.nextShort();
-        System.out.println("Do you like the color blue?: ");
-        boolean colorPicker = scan.hasNextBoolean();
+        System.out.println("Do you like the color blue?(true/false): ");
+        boolean colorPicker = scan.nextBoolean();
 
 
 
@@ -50,7 +50,9 @@ public class UserInterface {
         double firstNumber = scan.nextDouble();
         System.out.println("Pick another number from 1 - 50?: ");
         double secondNumber = scan.nextDouble();
+
         double answer = (firstNumber * secondNumber);
+        System.out.println(answer);
 
         return(answer);
     }
