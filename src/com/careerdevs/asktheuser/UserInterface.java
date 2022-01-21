@@ -1,14 +1,10 @@
-package com.careerdevs.sayhello;
+package com.careerdevs.asktheuser;
 
 import java.util.Scanner;
 
-public class WhatWasYourNameAgain {
+public class UserInterface {
     public static void main(String[] args) {
-
         helloAgain();
-
-
-
     }
 
     public static void helloAgain () {
@@ -44,6 +40,5 @@ public class WhatWasYourNameAgain {
 
 
     }
-
 
 }
