@@ -23,10 +23,7 @@ public class Main {
 
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }
 
 //Fields: name (String), population (long), capital (String)
