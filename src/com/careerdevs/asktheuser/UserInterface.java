@@ -52,7 +52,7 @@ public class UserInterface {
         double secondNumber = scan.nextDouble();
 
         double answer = (firstNumber * secondNumber);
-        System.out.println(answer);
+        System.out.println("Your lucky number is " + answer);
 
         return(answer);
     }
